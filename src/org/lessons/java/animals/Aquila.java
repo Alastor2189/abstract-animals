@@ -1,6 +1,7 @@
 package org.lessons.java.animals;
 
-public class Aquila extends Animals {
+import Interfacce.Volante;
+public class Aquila extends Animals implements Volante {
 
 	public Aquila(String nomeAnimale) {
 		super(nomeAnimale);
@@ -9,12 +10,17 @@ public class Aquila extends Animals {
 
 	@Override
 	public void esecuzioneVerso() {
-		System.out.println("huiiiiiiiiiiii");
+		System.out.println("Verso: huiiiiiiiiiiii");
 	}
 	
 	@Override
 	public void nutrimento() {
-		System.out.print("L'aquila caccia i mammiferi, come volpi, lepri, marmotte, conigli selvatici, faine e altre specie del peso di 6-7 kg");
+		System.out.print("Nutrimento: L'aquila caccia i mammiferi, come volpi, lepri, marmotte, conigli selvatici, faine e altre specie del peso di 6-7 kg");
+	}
+	
+	@Override 
+	public void faiVolare() {
+		System.out.println(getNomeAnimale() + ": Sta volando");
 	}
 	
 	

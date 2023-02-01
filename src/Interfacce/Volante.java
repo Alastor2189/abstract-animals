@@ -1,7 +1,5 @@
 package Interfacce;
 
-package Interfacce;
-
-public class Volante {
-	public abstract void saVolare();
+public interface Volante {
+	public abstract void faiVolare();
 }

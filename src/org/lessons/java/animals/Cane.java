@@ -1,6 +1,7 @@
 package org.lessons.java.animals;
 
-public class Cane extends Animals{
+import Interfacce.Nuotatore;
+public class Cane extends Animals implements Nuotatore{
 	public Cane(String nomeAnimale) {
 		super(nomeAnimale);
 		// TODO Auto-generated constructor stub
@@ -8,11 +9,16 @@ public class Cane extends Animals{
 
 	@Override
 	public void esecuzioneVerso() {
-		System.out.println("Bau");
+		System.out.println("Verso: Bau");
 	}
 	
 	@Override
 	public void nutrimento() {
-		System.out.print("carne e vegetali");
+		System.out.print("nutrimento: carne e vegetali");
+	}
+	
+	@Override 
+	public void faiNuotare() {
+		System.out.println(getNomeAnimale() + ": Sta nuotando");
 	}
 }

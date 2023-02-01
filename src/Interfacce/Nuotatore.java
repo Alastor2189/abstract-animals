@@ -1,8 +1,6 @@
 package Interfacce;
 
-package Interfacce;
-
-public class Nuotatore {
-	public abstract void saNuotare();
+public interface Nuotatore {
+	public abstract void faiNuotare();
 }
 

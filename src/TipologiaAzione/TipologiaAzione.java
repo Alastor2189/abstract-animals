@@ -5,10 +5,12 @@ import Interfacce.Volante;
 
 public class TipologiaAzione {
 	public void falloVolare(Volante a) {
-		a.saVolare();
+		a.faiVolare();
 	}
 	
 	public void falloNuotare(Nuotatore a) {
-		a.saNuotare();
+		a.faiNuotare();
 	}
+
+	
 }
